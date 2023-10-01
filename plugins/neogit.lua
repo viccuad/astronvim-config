@@ -1,15 +1,14 @@
 return {
   {
     "NeogitOrg/neogit",
-    setup = {
-      --  mappings = {
-      --   -- modify status buffer mappings
-      --   status = {
-      --     ["F"] = "PullPopup",
-      --     ["p"] = "PushPopup",
-      --   }
-      -- },
-      use_magit_keybindings = true,
+    setup = { -- TODO setup doesn't work
+       mappings = {
+        -- modify status buffer mappings
+        status = {
+          ["F"] = "PullPopup",
+          ["p"] = "PushPopup",
+        }
+      },
       integrations = {
         -- requires sindrets/diffview.nvim installed, which is installed from community
         diffview = enabled,
