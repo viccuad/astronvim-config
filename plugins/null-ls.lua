@@ -11,7 +11,14 @@ return {
       -- Set a formatter
       -- null_ls.builtins.formatting.stylua,
       -- null_ls.builtins.formatting.prettier,
+      -- null_ls.builtins.formatting.prettier.with {
+      --   filetypes = { "html", "json", "yaml", "markdown" },
+      -- },
+    --   null_ls.builtins.diagnostics.commitlint.with({
+    --     filetypes = { "neogitcommitmessage", "gitcommit" },
+    -- }),
     }
     return config -- return final config table
   end,
 }
+  

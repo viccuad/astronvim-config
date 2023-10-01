@@ -20,9 +20,20 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+	
+	-- Mimic C-g as in Emacs, to close/cancel stuff. Doesn't work, maybe wrong
+	-- place
+	-- ["<C-g>"] = {"<Esc><Esc><Esc><q><q><q>"},
+	-- ["<C-G>"] = { "<Esc><Esc><Esc>qqq", desc = "Escape ala emacs style" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+	-- Mimic C-g as in Emacs, to close/cancel stuff. Doesn't work, maybe wrong
+	-- place
+	-- ["<C-G>"] = { "q", desc = "Escape ala emacs style" },
   },
+ --  i = {
+	-- ["<C-G>"] = { "q", desc = "Escape ala emacs style" },
+ --  },
 }
