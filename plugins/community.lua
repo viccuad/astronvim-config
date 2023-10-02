@@ -8,7 +8,7 @@ return {
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
 
-  -- { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   -- { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
   --
   { import = "astrocommunity.diagnostics.trouble-nvim" },
