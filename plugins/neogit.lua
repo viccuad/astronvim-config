@@ -1,7 +1,7 @@
 return {
   {
     "NeogitOrg/neogit",
-    setup = { -- TODO setup doesn't work
+    opts = {
        mappings = {
         -- modify status buffer mappings
         status = {
