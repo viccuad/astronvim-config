@@ -2,6 +2,8 @@ return {
   {
     "NeogitOrg/neogit",
     opts = {
+       -- The time after which an output console is shown for slow running commands
+       console_timeout = 5000,
        mappings = {
         -- modify status buffer mappings
         status = {
