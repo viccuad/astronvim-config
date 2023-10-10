@@ -1,7 +1,17 @@
-deps:
+Run `:checkhealth` for debugging.
 
-- apt install wl-clipboard nerd fonts node
+Deps:
+
+```
+apt install wl-clipboard nerd fonts node
+```
+
+Optional deps:
+
+```
+apt install luarocks gdu
+```
 
 TODO:
 
-- makefile linter
+- Linter for Makefiles
