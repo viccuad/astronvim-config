@@ -9,10 +9,6 @@ return {
           ["p"] = "PushPopup",
         }
       },
-      integrations = {
-        -- requires sindrets/diffview.nvim installed, which is installed from community
-        diffview = enabled,
-      },
       sections = {
         unstaged = {
           folded = false,
