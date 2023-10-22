@@ -59,8 +59,11 @@ return {
         -- from https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack/rust
       settings = {
         ["rust-analyzer"] = {
+          checkOnSave = {
+            command = "clippy",
+          },
           cargo = {
-            -- run rust-analyzer in its on profile
+            -- run rust-analyzer in its own profile
             extraEnv = { CARGO_PROFILE_RUST_ANALYZER_INHERITS = 'dev', },
             extraArgs = { "--profile", "rust-analyzer", },
             -- 
