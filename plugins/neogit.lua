@@ -5,8 +5,8 @@ return {
        -- The time after which an output console is shown for slow running commands
        console_timeout = 5000,
        mappings = {
-        -- modify status buffer mappings
-        status = {
+        -- modify popup buffer mappings
+        popup = {
           ["F"] = "PullPopup",
           ["p"] = "PushPopup",
         }
