@@ -1,3 +1,32 @@
+# Readme vic
+
+This branch `main` contains the configs for Astronvim v4. Old configs are at
+branch `v3-archive`.
+The `main` branch has as parent the branch `template-main`, which corresponds
+to https://github.com/AstroNvim/template.
+
+# Installing
+
+Run `:checkhealth` for debugging.
+
+Deps:
+
+```console
+apt install wl-clipboard nerd fonts node
+apt install luarocks gdu # optional deps
+```
+
+# TODO
+
+- Linter for Makefiles
+- see TODOs in config
+
+---
+
+the rest of this document content is the README.md from the template.
+
+---
+
 # AstroNvim Template
 
 **NOTE:** This is for AstroNvim v4+
