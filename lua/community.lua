@@ -11,12 +11,14 @@ return {
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
 
-  { import = "astrocommunity.lsp.garbage-day-nvim" },
+  { import = "astrocommunity.lsp.garbage-day-nvim" }, -- close longrunning lsp servers
+  { import = "astrocommunity.lsp.actions-preview-nvim" },
 
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   -- { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
-  --
-  { import = "astrocommunity.diagnostics.trouble-nvim" },
+
+  -- { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
 
   -- { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.telescope-undo-nvim" },
@@ -27,7 +29,8 @@ return {
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.git.diffview-nvim" }, -- used by neogit, TODO. Use d or D while hovering a file
   { import = "astrocommunity.git.octo-nvim" },
-  { import = "astrocommunity.git.openingh-nvim" }, -- TODO configure <spc g Y> and so
+  -- { import = "astrocommunity.git.openingh-nvim" }, -- TODO configure <spc g Y> and so
+  { import = "astrocommunity.git.gitlinker-nvim" }, -- <spc g y>, <spc g z>
 
   { import = "astrocommunity.note-taking.neorg" },
 
@@ -44,7 +47,12 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.terraform" },
+  -- { import = "astrocommunity.pack.cs" },
+  -- { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.rego" },
 
+  -- { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.programming-language-support.rest-nvim" },
 
   -- { import = "astrocommunity.scrolling.nvim-scrollbar" }, performance hit
@@ -60,4 +68,5 @@ return {
   --     { "copilot.lua", enabled = false },
   -- }
   { import = "astrocommunity.completion.copilot-lua" }, -- default keybinds: accept <Alt-l>, next <Alt-]>, dismiss <Ctrl-l>
+  -- { import = "astrocommunity.editing-support.copilotchat-nvim-nvim" },
 }
