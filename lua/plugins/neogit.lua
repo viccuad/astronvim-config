@@ -19,6 +19,9 @@ return {
           folded = false,
         },
       },
+      integrations = {
+        diffview = nil, -- sometimes diffview appears when doing rebases on its own. Better to trigger it manually
+      },
     },
     keys = {
       { "<leader>gg", ":Neogit kind=vsplit<CR>", desc = "Open Neogit" },
