@@ -68,7 +68,7 @@ return {
   --     { "copilot.lua", enabled = false },
   -- }
   { import = "astrocommunity.completion.copilot-lua" }, -- default keybinds: accept <Alt-l>, next <Alt-]>, dismiss <Ctrl-l>
-  -- { import = "astrocommunity.editing-support.copilotchat-nvim-nvim" },
+  { import = "astrocommunity.editing-support.copilotchat-nvim" },
 
   -- general recipes:
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" }, -- disable lsp hints in insert mode
