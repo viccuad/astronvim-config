@@ -51,6 +51,7 @@ return {
   -- { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.rego" },
+  -- { import = "astrocommunity.pack.ruby" },
 
   -- { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.programming-language-support.rest-nvim" },
@@ -72,4 +73,5 @@ return {
 
   -- general recipes:
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" }, -- disable lsp hints in insert mode
+  -- { import = "astrocommunity.recipes.ai" }, -- Use tab for snippet and AI completion, <C-n> & <C-p> for completion lists
 }
