@@ -18,7 +18,7 @@ return {
         -- Normal = { bg = "#000000" },
         NotifyBackground = { bg = "#2d2a2e" },
       },
-      astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
+      astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
       },
       duskfox = { -- a table of overrides/changes when applying the duskfox theme

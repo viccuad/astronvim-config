@@ -29,8 +29,6 @@ return {
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.git.diffview-nvim" }, -- used by neogit, TODO. Use d or D while hovering a file
   { import = "astrocommunity.git.octo-nvim" },
-  -- { import = "astrocommunity.git.openingh-nvim" }, -- TODO configure <spc g Y> and so
-  { import = "astrocommunity.git.gitlinker-nvim" }, -- <spc g y>, <spc g z>
 
   { import = "astrocommunity.note-taking.neorg" },
 
