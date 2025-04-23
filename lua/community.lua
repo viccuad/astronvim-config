@@ -30,7 +30,7 @@ return {
   { import = "astrocommunity.git.diffview-nvim" }, -- used by neogit, TODO. Use d or D while hovering a file
   { import = "astrocommunity.git.octo-nvim" },
 
-  { import = "astrocommunity.note-taking.neorg" },
+  -- { import = "astrocommunity.note-taking.neorg" },
 
   -- { import = "astrocommunity.pack.ansible" }, FIXME mason ls reinstalls
   { import = "astrocommunity.pack.lua" },
