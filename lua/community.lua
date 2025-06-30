@@ -47,6 +47,7 @@ return {
   { import = "astrocommunity.pack.terraform" },
   -- { import = "astrocommunity.pack.cs" },
   -- { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.rego" },
   -- { import = "astrocommunity.pack.ruby" },
