@@ -13,13 +13,15 @@ return {
       large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
       autopairs = true, -- enable autopairs at start
       cmp = true, -- enable completion at start
-      diagnostics = { virtual_text = true, virtual_lines = true }, -- diagnostic settings on startup
+      diagnostics = { virtual_text = false, virtual_lines = true }, -- diagnostic settings on startup
       highlighturl = true, -- highlight URLs at start
       notifications = true, -- enable notifications at start
     },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
+    -- vic: see https://docs.astronvim.com/recipes/diagnostics/
     diagnostics = {
       virtual_text = true,
+      virtual_lines = true,
       underline = true,
     },
     -- passed to `vim.filetype.add`
