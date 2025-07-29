@@ -11,11 +11,12 @@ return {
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
 
-  { import = "astrocommunity.lsp.garbage-day-nvim" }, -- close longrunning lsp servers
   -- general recipes:
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" }, -- disable lsp hints in insert mode
   -- { import = "astrocommunity.recipes.ai" }, -- Use tab for snippet and AI completion, <C-n> & <C-p> for completion lists
   -- { import = "astrocommunity.recipes.diagnostic-virtual-lines-current-line" },
+
+  -- { import = "astrocommunity.lsp.garbage-day-nvim" }, -- close longrunning lsp servers
   { import = "astrocommunity.lsp.actions-preview-nvim" },
 
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
