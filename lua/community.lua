@@ -12,6 +12,10 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
 
   { import = "astrocommunity.lsp.garbage-day-nvim" }, -- close longrunning lsp servers
+  -- general recipes:
+  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" }, -- disable lsp hints in insert mode
+  -- { import = "astrocommunity.recipes.ai" }, -- Use tab for snippet and AI completion, <C-n> & <C-p> for completion lists
+  -- { import = "astrocommunity.recipes.diagnostic-virtual-lines-current-line" },
   { import = "astrocommunity.lsp.actions-preview-nvim" },
 
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
@@ -69,8 +73,4 @@ return {
   -- }
   { import = "astrocommunity.completion.copilot-lua" }, -- default keybinds: accept <Alt-l>, next <Alt-]>, dismiss <Ctrl-l>
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
-
-  -- general recipes:
-  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" }, -- disable lsp hints in insert mode
-  -- { import = "astrocommunity.recipes.ai" }, -- Use tab for snippet and AI completion, <C-n> & <C-p> for completion lists
 }
