@@ -56,6 +56,13 @@ return {
           },
         },
       },
+      gopls = {
+        settings = {
+          gopls = {
+            buildFlags = { "-tags=testing" }, -- needed for kubewarden-controller
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
