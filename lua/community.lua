@@ -56,6 +56,7 @@ return {
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.rego" },
   -- { import = "astrocommunity.pack.ruby" },
+  { import = "astrocommunity.pack.proto" },
 
   -- { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.programming-language-support.rest-nvim" },
