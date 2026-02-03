@@ -57,6 +57,7 @@ return {
   { import = "astrocommunity.pack.rego" },
   -- { import = "astrocommunity.pack.ruby" },
   { import = "astrocommunity.pack.proto" },
+  { import = "astrocommunity.pack.harper" }, -- english grammar checker
 
   -- { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.programming-language-support.rest-nvim" },
