@@ -60,7 +60,7 @@ return {
   { import = "astrocommunity.pack.harper" }, -- english grammar checker. Changed astrlsp.lua handlers to not autostart it
 
   -- { import = "astrocommunity.markdown-and-latex.vimtex" },
-  { import = "astrocommunity.programming-language-support.rest-nvim" },
+  -- { import = "astrocommunity.programming-language-support.rest-nvim" },
 
   -- { import = "astrocommunity.scrolling.nvim-scrollbar" }, performance hit
   -- { import = "astrocommunity.scrolling.satellite-nvim" }, -- needs nvim >= 0.10
