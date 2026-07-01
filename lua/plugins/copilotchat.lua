@@ -1,5 +1,15 @@
 return {
   "CopilotC-Nvim/CopilotChat.nvim",
+  -- opts = {
+  --   model = "claude-sonnet-4.6",
+  --   window = {
+  --     layout = "float",
+  --     width = 0.5,
+  --     height = 0.7,
+  --   },
+  --   auto_insert_mode = true,
+  -- },
+  -- config = function(_, opts)
   config = function()
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "copilot-chat",

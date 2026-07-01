@@ -24,12 +24,6 @@ return {
       duskfox = { -- a table of overrides/changes when applying the duskfox theme
         Normal = { bg = "#000000" },
       },
-      -- "monokai-pro" = {  -- a table of overrides/changes when applying the monokai-pro theme
-      --   SpellBad = { sp = "#ffbba6", undercurl = true },
-      --   SpellCap = { sp = "#ffbba6", undercurl = true },
-      --   SpellLocal = { sp = "#ffbba6", undercurl = true },
-      --   SpellRare = { sp = "#ffbba6", undercurl = true },
-      -- },
     },
     -- Icons can be configured throughout the interface
     icons = {
