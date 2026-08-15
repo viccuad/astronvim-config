@@ -20,5 +20,17 @@ return {
       -- null_ls.builtins.formatting.stylua,
       -- null_ls.builtins.formatting.prettier,
     })
+
+    -- Keep null-ls temp files out of the project tree.
+    -- For tools that cannot read stdin (e.g. `deadnix`), null-ls writes the
+    -- buffer to `.null-ls_<rand>_<name>` *next to the original file* and only
+    -- removes it once the process finishes. If the command fails to spawn or
+    -- nvim exits uncleanly, the file is orphaned in the repo.
+    opts.sources = vim.tbl_map(function(source)
+      if source._opts and source._opts.to_temp_file then
+        return source.with { temp_dir = vim.fn.stdpath "cache" }
+      end
+      return source
+    end, opts.sources or {})
   end,
 }
