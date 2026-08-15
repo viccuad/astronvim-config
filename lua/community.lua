@@ -42,6 +42,7 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.golangci-lint" },
   { import = "astrocommunity.pack.helm" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.nix" },
@@ -50,6 +51,7 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.terraform" },
+  { import = "astrocommunity.pack.wgsl" },
   -- { import = "astrocommunity.pack.cs" },
   -- { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.typescript" },
@@ -61,6 +63,7 @@ return {
 
   -- { import = "astrocommunity.markdown-and-latex.vimtex" },
   -- { import = "astrocommunity.programming-language-support.rest-nvim" },
+  { import = "astrocommunity.programming-language-support.csv-vim" },
 
   -- { import = "astrocommunity.scrolling.nvim-scrollbar" }, performance hit
   -- { import = "astrocommunity.scrolling.satellite-nvim" }, -- needs nvim >= 0.10
@@ -76,4 +79,5 @@ return {
   -- }
   -- { import = "astrocommunity.completion.copilot-lua" }, -- default keybinds: accept <Alt-l>, next <Alt-]>, dismiss <Ctrl-l>
   { import = "astrocommunity.ai.copilotchat-nvim" },
+  { import = "astrocommunity.ai.opencode-nvim" },
 }
