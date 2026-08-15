@@ -23,7 +23,6 @@ return {
   -- { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
 
   -- { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
 
   -- { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.telescope-undo-nvim" },
