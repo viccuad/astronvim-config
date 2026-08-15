@@ -16,10 +16,12 @@ return {
     highlights = {
       init = { -- this table overrides highlights in all themes
         -- Normal = { bg = "#000000" },
-        NotifyBackground = { bg = "#2d2a2e" },
       },
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
+      },
+      ["monokai-pro"] = { -- a table of overrides/changes when applying the monokai-pro theme
+        NotifyBackground = { bg = "#2d2a2e" },
       },
     },
     -- Icons can be configured throughout the interface
