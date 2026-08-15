@@ -21,9 +21,6 @@ return {
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
       },
-      duskfox = { -- a table of overrides/changes when applying the duskfox theme
-        Normal = { bg = "#000000" },
-      },
     },
     -- Icons can be configured throughout the interface
     icons = {
