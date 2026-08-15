@@ -62,6 +62,16 @@ return {
           },
         },
       },
+      marksman = {
+        -- Mason ships a prebuilt .NET binary that aborts on startup with
+        -- "Couldn't find a valid ICU package installed on the system" when the
+        -- system has no global libicu, which is the case on NixOS. Disabling
+        -- globalization is fine for a markdown server and avoids the crash loop.
+        -- Only applied on NixOS so other machines (Debian, ...) keep full ICU.
+        cmd_env = vim.fn.filereadable "/etc/NIXOS" == 1
+            and { DOTNET_SYSTEM_GLOBALIZATION_INVARIANT = "1" }
+          or nil,
+      },
     },
     -- customize how language servers are attached
     handlers = {
