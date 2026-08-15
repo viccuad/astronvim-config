@@ -5,6 +5,28 @@ branch `v3-archive`.
 The `main` branch has as parent the branch `template-main`, which corresponds
 to https://github.com/AstroNvim/template.
 
+# Debugging
+
+Start with `:checkhealth`, or `:checkhealth <plugin-name>`.
+Not every plugin ships a health check, but most well-maintained ones do
+(lua/\*/health.lua).
+
+Subsystem-specific logs, in rough order of usefulness:
+`:messages`
+`:checkhealth`
+`:LspLog`
+`:NullLsInfo / :NullLsLog`
+`:MasonLog`
+`:Lazy`
+
+Underlying log files, useful for grep when the buffer is huge:
+`~/.local/state/nvim/lsp.log`
+`~/.local/state/nvim/mason.log`
+`~/.local/state/nvim/log`
+
+For missing-executable errors specifically, `vim.fn.executable("name")` in a
+`:lua` command is the quickest confirmation.
+
 # Installing
 
 Run `:checkhealth` for debugging.
