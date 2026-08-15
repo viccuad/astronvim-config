@@ -3,6 +3,29 @@
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
 --       as this provides autocomplete and documentation while editing
 
+--- Toggle the `harper_ls` grammar checker.
+--- It is intentionally not autostarted (see `plugins/astrolsp.lua`), so this
+--- follows the AstroNvim toggle convention: flip the state and notify.
+---@param silent? boolean if true then do not send a notification
+local function toggle_harper(silent)
+  local clients = vim.lsp.get_clients { name = "harper_ls" }
+  local enabled = #clients > 0
+  if enabled then
+    vim.lsp.enable("harper_ls", false)
+    for _, client in ipairs(clients) do
+      client:stop()
+    end
+  else
+    -- `vim.lsp.enable` also attaches to already-open matching buffers, so no
+    -- explicit `vim.lsp.start` is needed. Calling both would create a second
+    -- client with an unresolved `root_dir` and duplicate every diagnostic.
+    vim.lsp.enable "harper_ls"
+  end
+  if not silent then
+    require("astrocore").notify(("Grammar checker %s"):format(enabled and "off" or "on"))
+  end
+end
+
 ---@type LazySpec
 return {
   "AstroNvim/astrocore",
@@ -54,6 +77,13 @@ return {
         -- This can be found in the `lua/lazy_setup.lua` file
       },
     },
+    -- User commands
+    commands = {
+      HarperToggle = {
+        function() toggle_harper() end,
+        desc = "Toggle harper_ls grammar checker",
+      },
+    },
     -- Mappings can be configured through AstroCore as well.
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
@@ -78,6 +108,9 @@ return {
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         ["<Leader>b"] = { desc = "Buffers" },
+
+        -- toggle the grammar checker (`<Leader>u` is the AstroNvim toggle prefix)
+        ["<Leader>uG"] = { function() toggle_harper() end, desc = "Toggle grammar checker" },
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,

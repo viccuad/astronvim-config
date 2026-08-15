@@ -71,6 +71,9 @@ return {
       -- the key is the server that is being setup with `vim.lsp.config`
       -- rust_analyzer = false, -- setting a handler to false will disable the set up of that language server
 
+      -- Don't autostart the grammar checker; it is noisy on code buffers.
+      -- The `harper` pack still registers its settings via `vim.lsp.config`,
+      -- so it can be started on demand with `:HarperStart` (see astrocore.lua).
       harper_ls = false,
     },
     -- Configure buffer local auto commands to add when attaching a language server
