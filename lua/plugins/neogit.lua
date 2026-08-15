@@ -20,7 +20,12 @@ return {
         },
       },
       integrations = {
-        diffview = nil, -- sometimes diffview appears when doing rebases on its own. Better to trigger it manually
+        -- Stop diffview from opening on its own when staging a
+        -- conflicted file during a rebase/merge. Trade-off: Neogit's diff popup
+        -- gates its actions on this flag, so `d`/`h`/`r`/`u`/`s`/`w`/`c` are no
+        -- longer offered there (only `p` paths remains).
+        -- Use `:DiffviewOpen`.
+        diffview = false,
       },
     },
     keys = {

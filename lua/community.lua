@@ -32,7 +32,7 @@ return {
   -- { import = "astrocommunity.editing-support.true-zen-nvim" }, under spc+z, not there yet
 
   { import = "astrocommunity.git.neogit" },
-  { import = "astrocommunity.git.diffview-nvim" }, -- used by neogit, TODO. Use d or D while hovering a file
+  { import = "astrocommunity.git.diffview-nvim" }, -- neogit integration is disabled on purpose (see plugins/neogit.lua)
   { import = "astrocommunity.git.octo-nvim" },
 
   -- { import = "astrocommunity.note-taking.neorg" },
