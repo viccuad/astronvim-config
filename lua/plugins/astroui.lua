@@ -12,6 +12,9 @@ return {
   opts = {
     -- change colorscheme
     colorscheme = "monokai-pro",
+    -- "astrotheme" resolves to astrodark or astrolight, based on `vim.o.background`.
+    -- -- The GNOME system theme drives that option (see plugins/auto-dark-mode.lua).
+    -- colorscheme = "astrotheme",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes
