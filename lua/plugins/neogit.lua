@@ -19,6 +19,7 @@ return {
           folded = false,
         },
       },
+      process_spinner = true,
       integrations = {
         -- Stop diffview from opening on its own when staging a
         -- conflicted file during a rebase/merge. Trade-off: Neogit's diff popup
