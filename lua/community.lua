@@ -76,6 +76,6 @@ return {
   --     { "copilot.lua", enabled = false },
   -- }
   -- { import = "astrocommunity.completion.copilot-lua" }, -- default keybinds: accept <Alt-l>, next <Alt-]>, dismiss <Ctrl-l>
-  { import = "astrocommunity.ai.copilotchat-nvim" },
+  -- { import = "astrocommunity.ai.copilotchat-nvim" },
   { import = "astrocommunity.ai.opencode-nvim" },
 }
