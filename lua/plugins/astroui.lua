@@ -11,9 +11,8 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "monokai-pro",
-    -- "astrotheme" resolves to astrodark or astrolight, based on `vim.o.background`.
-    -- -- The GNOME system theme drives that option (see plugins/auto-dark-mode.lua).
+    -- currently using auto-dark-mode.lua, change it there
+    -- colorscheme = "monokai-pro",
     -- colorscheme = "astrotheme",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
@@ -24,7 +23,7 @@ return {
         -- Normal = { bg = "#000000" },
       },
       ["monokai-pro"] = { -- a table of overrides/changes when applying the monokai-pro theme
-        NotifyBackground = { bg = "#2d2a2e" },
+        -- NotifyBackground = { bg = "#2d2a2e" },
       },
     },
     -- Icons can be configured throughout the interface

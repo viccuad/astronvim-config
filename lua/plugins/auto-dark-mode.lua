@@ -2,7 +2,7 @@
 --
 -- `auto-dark-mode.nvim` listens to the XDG desktop portal setting
 -- `org.freedesktop.appearance color-scheme` and calls one of the two functions
--- below when the value changes. astrotheme then reloads itself, because Vim
+-- below when the value changes. Catppuccin then reloads itself, because Vim
 -- re-sources the colorscheme every time `background` changes.
 --
 -- NOTE: GNOME reports `default` (no preference) until you pick a style in
@@ -15,13 +15,18 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
+      -- Use the explicit flavour names. The plain name `catppuccin` selects the
+      -- theme that Neovim 0.12 ships in `$VIMRUNTIME`, not the plugin. See the
+      -- comment block in `plugins/catppuccin.lua`.
+      -- `catppuccin-mocha` carries the Monokai Pro color overrides.
+      -- `catppuccin-latte` is the original light flavour.
       set_dark_mode = function()
         vim.o.background = "dark"
-        vim.cmd.colorscheme "monokai-pro"
+        vim.cmd.colorscheme "catppuccin-mocha"
       end,
       set_light_mode = function()
         vim.o.background = "light"
-        vim.cmd.colorscheme "astrotheme"
+        vim.cmd.colorscheme "catppuccin-latte"
       end,
     },
     config = function(_, opts)
