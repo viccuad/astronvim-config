@@ -30,7 +30,7 @@ return {
       },
     },
     keys = {
-      { "<leader>gg", ":Neogit kind=vsplit<CR>", desc = "Open Neogit" },
+      { "<leader>gg", ":Neogit kind=auto<CR>", desc = "Open Neogit" },
     },
   },
 }
