@@ -2,6 +2,12 @@ return {
   {
     "OXY2DEV/markview.nvim",
     opts = {
+      preview = {
+        -- reduce text "jumping around" when moving the cursor. default 150ms
+        debounce = 10,
+      },
+      -- remove padding in all markdown. Rendered text matches plaintext
+      -- besides the rendering:
       markdown = {
         code_blocks = {
           pad_amount = 0,
