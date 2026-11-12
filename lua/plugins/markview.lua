@@ -3,6 +3,9 @@ return {
     "OXY2DEV/markview.nvim",
     opts = {
       markdown = {
+        code_blocks = {
+          pad_amount = 0,
+        },
         list_items = {
           shift_width = 0,
           marker_minus = { add_padding = false },
